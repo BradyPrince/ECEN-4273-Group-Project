@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class sideItems {
     public static void main(String[] args) throws Exception {
@@ -59,5 +59,144 @@ public class sideItems {
 		for(int i = 0; i < x; i++){
 			System.out.println(cart[i]);
 		}
+    }
+}*/
+
+
+
+
+class Fries
+{
+    double price = 0.99;
+    String name = "French Fries";
+    Boolean salted = true;
+
+    public Fries(boolean salt)
+    {	
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class OnionRings
+{
+    double price = 1.50;
+    String name = "Onion Rings";
+    Boolean salted = true;
+
+    public OnionRings(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class TaterTots
+{
+    double price = 1.30;
+    String name = "Tater Tots";
+    Boolean salted = true;
+
+    public TaterTots(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class CurlyFries
+{
+    double price = 0.99;
+    String name = "Curly Fries";
+    Boolean salted = true;
+
+    public CurlyFries(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class HashBrowns
+{
+    double price = 1.50;
+    String name = "Curly Fries";
+    Boolean salted = true;
+
+    public HashBrowns(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
     }
 }
