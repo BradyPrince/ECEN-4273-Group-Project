@@ -35,12 +35,14 @@ public class Kiosk
      */
     public static void mainMenu()
     {
-        ArrayList<Object> userOrder = new ArrayList();
+        ArrayList<Item> userOrder = new ArrayList();
+		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
         System.out.println("Please enter the number corresponding to the menu you would like to view.");
         Scanner scan = new Scanner(System.in);
         while(true)
         {
-            System.out.println("1. Burgers \n2. Sides\n3. Deserts\n4. Checkout\n9. Cancel Order");
+			//System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
+			System.out.println("1. Burgers \n2. Sides\n3. Deserts\n4. Checkout\n9. Cancel Order");
             int userInput = scan.nextInt();
             if(userInput == 1)//BURGERS MENU
             {
@@ -52,7 +54,7 @@ public class Kiosk
             }
             else if(userInput == 3)//DESERTS MENU
             {
-                sidesMenu(userOrder);
+                desertMenu(userOrder);
             }
             else if(userInput == 4)//CHECKOUT MENU
             {
@@ -72,7 +74,7 @@ public class Kiosk
             }
             else
             {
-                System.out.println("\n\n\n\n\n\nInvalid input! \nYou entered: "+ userInput +" \nPlease enter the number corresponding to the menu you would like to see!");
+                System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvalid input! \nYou entered: "+ userInput +" \nPlease enter the number corresponding to the menu you would like to see!");
                 continue;
             }
         }
@@ -80,9 +82,9 @@ public class Kiosk
     /*
      *   burgerMenu Written by William Gebhart 
      */
-    public static ArrayList<Object> burgerMenu(ArrayList<Object> userOrder)
+    public static ArrayList<Item> burgerMenu(ArrayList<Item> userOrder)
     {
-        System.out.println("\n\n\n\n\n\n\n\n--------------------------------------------------");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
         System.out.println("Select the number corresponding to the item you would like to add to your order.");
         Scanner scan = new Scanner(System.in);
         //List all menu Items
@@ -95,49 +97,64 @@ public class Kiosk
         int userInput = scan.nextInt();
         if(userInput == 1)
         {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             System.out.println("Enter 1 if you would like for this to be a combo.\nEnter 0 for just the burger.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new SingleQuarterPounder(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new SingleQuarterPounder(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 2)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be a combo.\nEnter 0 for just the burger.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new DoubleQuarterPounder(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new DoubleQuarterPounder(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 3)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be a combo.\nEnter 0 for just the burger.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 userOrder.add(new TrippleQuarterPounder(true));
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 userOrder.add(new TrippleQuarterPounder(false));
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 4)
@@ -150,20 +167,24 @@ public class Kiosk
         }
         else if(userInput == 9)
         {
-          System.out.println("Returning to Main Menu.");
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else
         {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             System.out.println("Invalid Input. Returning to Main Menu");
+			System.out.println("--------------------------------------------------");
         }
         return userOrder;
     }
     /*
      *   sidesMenu Written by William Gebhart 
      */
-    public static ArrayList<Object> sidesMenu(ArrayList<Object> userOrder)
+    public static ArrayList<Item> sidesMenu(ArrayList<Item> userOrder)
     {
-        System.out.println("\n\n\n\n\n\n\n\n--------------------------------------------------");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
         System.out.println("Select the number corresponding to the item you would like to add to your order.");
         Scanner scan = new Scanner(System.in);
         //List all menu Items
@@ -176,99 +197,128 @@ public class Kiosk
         int userInput = scan.nextInt();
         if(userInput == 1)
         {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new Fries(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new Fries(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 2)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new OnionRings(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new OnionRings(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 3)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new TaterTots(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new TaterTots(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 4)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new CurlyFries(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new CurlyFries(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 5)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
                 userOrder.add(new HashBrowns(true));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
             else
             {
                 userOrder.add(new HashBrowns(false));
+				System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 System.out.println("Item Added! Returning to Main Menu.");
+				System.out.println("--------------------------------------------------");
             }
         }
         else if(userInput == 9)
         {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
          	System.out.println("Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else
         {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             System.out.println("Invalid Input. Returning to Main Menu");
+			System.out.println("--------------------------------------------------");
         }
         return userOrder;
     }
     /*
      *   desertMenu Written by William Gebhart 
      */
-    public static ArrayList<Object> desertMenu(ArrayList<Object> userOrder)
+    public static ArrayList<Item> desertMenu(ArrayList<Item> userOrder)
     {
-        System.out.println("\n\n\n\n\n\n\n\n--------------------------------------------------");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
         System.out.println("Select the number corresponding to the item you would like to add to your order.");
         Scanner scan = new Scanner(System.in);
         //List all menu Items
@@ -285,47 +335,67 @@ public class Kiosk
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
 			userOrder.add(new Cookie());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Item Added! Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else if(userInput == 2)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
 			userOrder.add(new ApplePie());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Item Added! Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else if(userInput == 3)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
 			userOrder.add(new CinnamonBun());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Item Added! Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else if(userInput == 4)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
 			userOrder.add(new ChocolateShake());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Item Added! Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else if(userInput == 5)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
 			userOrder.add(new StrawberryShake());
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Item Added! Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else if(userInput == 9)
         {
-           System.out.println("Returning to Main Menu.");
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println("Returning to Main Menu.");
+			System.out.println("--------------------------------------------------");
         }
         else
         {
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             System.out.println("Invalid Input. Returning to Main Menu");
+			System.out.println("--------------------------------------------------");
         }
         return userOrder;
     }
     
-    public static Boolean checkoutMenu(ArrayList<Object> userOrder)
+    public static Boolean checkoutMenu(ArrayList<Item> userOrder)
     {
         //Placeholder: Print contents of userOrder
-        System.out.println("\n\n\n\n\n\n\n\n--------------------------------------------------");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
         System.out.println("User Order: ");
-        for(int i=0; i<userOrder.size(); i++)
+		printReceipt(userOrder);
+        /*for(int i=0; i<userOrder.size(); i++)
         {
             System.out.println(userOrder.get(i));
-        }
+        }*/
         //Calculate total
         //Give user options to add/remove items
         //Return true if user has finished placing their order
@@ -333,6 +403,27 @@ public class Kiosk
 
         return true;
     }
+	public static void printReceipt(ArrayList<Item> userOrder) {
+		
+		System.out.println("Receipt: Customer Copy\nItem ------- Price\n");
+		for(Item item : userOrder) {
+			System.out.println(item.getName() + " ------- $" + item.getPrice());
+		}
+		System.out.printf("\nSub total ------- $%.2f\n", getTotal(userOrder));
+		System.out.printf("  Tax(6%%) ------- $%.2f\n", getTotal(userOrder) * 0.06);
+		System.out.printf("\nTotal ------- $%.2f\n", getTotal(userOrder) * 1.06);
+
+		System.out.println("\nHave a Great Day :) Come Back Again!\n");
+	}
+	public static double getTotal(ArrayList<Item> userOrder)
+	{
+		double total = 0.0;
+		for(Item item : userOrder) 
+		{
+			total += item.getPrice();
+		}
+		return total;
+	}
 }
 
 
@@ -554,7 +645,7 @@ class CurlyFries extends Item
 class HashBrowns extends Item
 {
     double price = 1.50;
-    String name = "Curly Fries";
+    String name = "Hash Browns";
     Boolean salted = true;
 
     public HashBrowns(boolean salt)
@@ -595,7 +686,7 @@ class Cookie extends Item
     double price = 0.50;
     String name = "Cookie";
     
-    public HashBrowns()
+    public Cookie()
     {
 		
     }
@@ -613,7 +704,7 @@ class ApplePie extends Item
     double price = 2.99;
     String name = "Apple Pie";
     
-    public HashBrowns()
+    public ApplePie()
     {
 		
     }
