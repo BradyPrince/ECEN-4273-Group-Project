@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 public class desertItems {
     public static void main(String[] args) throws Exception {
@@ -59,5 +59,97 @@ public class desertItems {
 		for(int i = 0; i < x; i++){
 			System.out.println(cart[i]);
 		}
+    }
+}*/
+
+
+class Cookie
+{
+    double price = 0.50;
+    String name = "Cookie";
+    
+    public HashBrowns()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class ApplePie
+{
+    double price = 2.99;
+    String name = "Apple Pie";
+    
+    public HashBrowns()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class CinnamonBun
+{
+    double price = 1.99;
+    String name = "Cinnamon Bun";
+    
+    public CinnamonBun()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class ChocolateShake
+{
+    double price = 1.99;
+    String name = "Chocolate Shake";
+    
+    public ChocolateShake()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class StrawberryShake
+{
+    double price = 1.99;
+    String name = "Strawberry Shake";
+    
+    public StrawberryShake()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
     }
 }
