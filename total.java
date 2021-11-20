@@ -13,7 +13,7 @@ public class total{
 	}
 	
 
-
+	//testing if the functions work
 	public static void main(String []args){
 		int x = 3;
 		total myTotal = new total();
