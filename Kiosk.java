@@ -86,35 +86,59 @@ public class Kiosk
         System.out.println("Select the number corresponding to the item you would like to add to your order.");
         Scanner scan = new Scanner(System.in);
         //List all menu Items
-        System.out.println("1. Burger");
-        System.out.println("2. {NAME}");
-        System.out.println("3. {NAME}");
+        System.out.println("1. Single Quarter Pounder");
+        System.out.println("2. Double Quarter Pounder");
+        System.out.println("3. Tripple Quarter Pounder");
         System.out.println("4. {NAME}");
         System.out.println("5. {NAME}");
         System.out.println("9. Return to Main Menu");
         int userInput = scan.nextInt();
         if(userInput == 1)
         {
-            System.out.println("Enter 1 if you would like for this to be a combo.");
+            System.out.println("Enter 1 if you would like for this to be a combo.\nEnter 0 for just the burger.");
             userInput = scan.nextInt();
             if(userInput == 1)
             {
-                userOrder.add(new Burger(true));
+                userOrder.add(new SingleQuarterPounder(true));
                 System.out.println("Item Added! Returning to Main Menu.");
             }
             else
             {
-                userOrder.add(new Burger(false));
+                userOrder.add(new SingleQuarterPounder(false));
                 System.out.println("Item Added! Returning to Main Menu.");
             }
         }
         else if(userInput == 2)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("Enter 1 if you would like for this to be a combo.\nEnter 0 for just the burger.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new DoubleQuarterPounder(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new DoubleQuarterPounder(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 3)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("Enter 1 if you would like for this to be a combo.\nEnter 0 for just the burger.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new TrippleQuarterPounder(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new TrippleQuarterPounder(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 4)
         {
