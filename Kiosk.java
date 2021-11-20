@@ -404,6 +404,8 @@ public class Kiosk
 
         return true;
     }
+	
+	// Written by Steven Gaiko
 	public static void printReceipt(ArrayList<Item> userOrder) {
 		
 		System.out.println("Receipt: Customer Copy\nItem ------- Price\n");
