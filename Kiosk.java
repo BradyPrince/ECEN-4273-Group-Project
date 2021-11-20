@@ -338,6 +338,10 @@ public class Kiosk
 
 
 
+/*
+	Abstact flass for all Menu Items.
+	-Brady
+*/
 abstract class Item
 {
 	double price;
@@ -355,31 +359,99 @@ abstract class Item
 
 
 
+/*
+	All Burger Menu Items.
+	-Brady
+*/
+class SingleQuarterPounder extends Item
+{
+	double price = 4.99;
+    String name = "Single Quarter Pounder";
+    boolean pickes;
+
+    public Burger(boolean isCombo)
+    {
+        if(isCombo)
+        {
+            price = 6.99;
+            name = "Single Quarter Pounder, Fries, Drink Combo";
+        }
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class DoubleQuarterPounder extends Item
+{
+	double price = 5.99;
+    String name = "Double Quarter Pounder";
+    boolean pickes;
+
+    public Burger(boolean isCombo)
+    {
+        if(isCombo)
+        {
+            price = 7.99;
+            name = "Double Quarter Pounder, Fries, Drink Combo";
+        }
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class TrippleQuarterPounder extends Item
+{
+	double price = 6.99;
+    String name = "Tripple Quarter Pounder";
+    boolean pickes;
+
+    public Burger(boolean isCombo)
+    {
+        if(isCombo)
+        {
+            price = 8.99;
+            name = "Tripple Quarter Pounder, Fries, Drink Combo";
+        }
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-//Placeholder Objects for testing
-class Fries
+/*
+	All Side Menu Items.
+	-Johnny
+	-Brady
+*/
+class Fries extends Item
 {
     double price = 0.99;
     String name = "French Fries";
     Boolean salted = true;
 
-    public Fries()
-    {
-
+    public Fries(boolean salt)
+    {	
+		salted = salt;
     }
     public String getName()
     {
@@ -398,19 +470,134 @@ class Fries
         salted = status;
     }
 }
-class Burger
+class OnionRings extends Item
 {
-    double price = 4.99;
-    String name = "Cheese Burger";
-    boolean pickes;
+    double price = 1.50;
+    String name = "Onion Rings";
+    Boolean salted = true;
 
-    public Burger(boolean isCombo)
+    public OnionRings(boolean salt)
     {
-        if(isCombo)
-        {
-            price = 6.99;
-            name = "Burger, Fries, Drink Combo";
-        }
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class TaterTots extends Item
+{
+    double price = 1.30;
+    String name = "Tater Tots";
+    Boolean salted = true;
+
+    public TaterTots(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class CurlyFries extends Item
+{
+    double price = 0.99;
+    String name = "Curly Fries";
+    Boolean salted = true;
+
+    public CurlyFries(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+class HashBrowns extends Item
+{
+    double price = 1.50;
+    String name = "Curly Fries";
+    Boolean salted = true;
+
+    public HashBrowns(boolean salt)
+    {
+		salted = salt;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+    public boolean getSaltedStatus()
+    {
+        return salted;
+    }
+    public void setSaltedStatus(Boolean status)
+    {
+        salted = status;
+    }
+}
+
+
+
+
+
+
+
+/*
+	All Desert Menu Items.
+	-Brett
+	-Brady
+*/
+class Cookie extends Item
+{
+    double price = 0.50;
+    String name = "Cookie";
+    
+    public HashBrowns()
+    {
+		
     }
     public String getName()
     {
@@ -421,3 +608,90 @@ class Burger
         return price;
     }
 }
+class ApplePie extends Item
+{
+    double price = 2.99;
+    String name = "Apple Pie";
+    
+    public HashBrowns()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class CinnamonBun extends Item
+{
+    double price = 1.99;
+    String name = "Cinnamon Bun";
+    
+    public CinnamonBun()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class ChocolateShake extends Item
+{
+    double price = 3.20;
+    String name = "Chocolate Shake";
+    
+    public ChocolateShake()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+class StrawberryShake extends Item
+{
+    double price = 3.20;
+    String name = "Strawberry Shake";
+    
+    public StrawberryShake()
+    {
+		
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
