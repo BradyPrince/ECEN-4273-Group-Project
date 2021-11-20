@@ -392,19 +392,10 @@ public class Kiosk
     
     public static Boolean checkoutMenu(ArrayList<Item> userOrder)
     {
-        //Placeholder: Print contents of userOrder
+        
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n--------------------------------------------------");
         System.out.println("User Order: ");
 		printReceipt(userOrder);
-        /*for(int i=0; i<userOrder.size(); i++)
-        {
-            System.out.println(userOrder.get(i));
-        }*/
-        //Calculate total
-        //Give user options to add/remove items
-        //Return true if user has finished placing their order
-        //Return false if user chose to return to main menu to modify their order
-
         return true;
     }
 	
