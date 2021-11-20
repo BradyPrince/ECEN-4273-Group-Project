@@ -1,10 +1,13 @@
+     /*
+     *  Written by: William Gebhart, Brady Prince, Brett Zacharias, Steven Gaiko, Johnny Enriquez
+     */
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Kiosk
 {
     /*
-     *  Written by William Gebhart 
+     *  Main Written by William Gebhart
      */
     public static void main(String args[])
     {
@@ -81,6 +84,7 @@ public class Kiosk
     }
     /*
      *   burgerMenu Written by William Gebhart 
+	 *   Added to By Brady Prince
      */
     public static ArrayList<Item> burgerMenu(ArrayList<Item> userOrder)
     {
@@ -181,6 +185,7 @@ public class Kiosk
     }
     /*
      *   sidesMenu Written by William Gebhart 
+	 *   Added to By Brady Prince
      */
     public static ArrayList<Item> sidesMenu(ArrayList<Item> userOrder)
     {
@@ -315,6 +320,7 @@ public class Kiosk
     }
     /*
      *   desertMenu Written by William Gebhart 
+	 *   Added to By Brady Prince
      */
     public static ArrayList<Item> desertMenu(ArrayList<Item> userOrder)
     {
