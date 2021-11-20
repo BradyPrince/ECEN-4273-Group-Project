@@ -1,4 +1,4 @@
-public class SingleQuarterPounder
+public class SingleQuarterPounder extends Item
 {
 	double price = 4.99;
     String name = "Single Quarter Pounder";
@@ -21,7 +21,7 @@ public class SingleQuarterPounder
         return price;
     }
 }
-class DoubleQuarterPounder
+class DoubleQuarterPounder extends Item
 {
 	double price = 5.99;
     String name = "Double Quarter Pounder";
@@ -44,7 +44,7 @@ class DoubleQuarterPounder
         return price;
     }
 }
-class TrippleQuarterPounder
+class TrippleQuarterPounder extends Item
 {
 	double price = 6.99;
     String name = "Tripple Quarter Pounder";
