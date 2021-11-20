@@ -369,7 +369,7 @@ class SingleQuarterPounder extends Item
     String name = "Single Quarter Pounder";
     boolean pickes;
 
-    public Burger(boolean isCombo)
+    public SingleQuarterPounder(boolean isCombo)
     {
         if(isCombo)
         {
@@ -392,7 +392,7 @@ class DoubleQuarterPounder extends Item
     String name = "Double Quarter Pounder";
     boolean pickes;
 
-    public Burger(boolean isCombo)
+    public DoubleQuarterPounder(boolean isCombo)
     {
         if(isCombo)
         {
@@ -415,7 +415,7 @@ class TrippleQuarterPounder extends Item
     String name = "Tripple Quarter Pounder";
     boolean pickes;
 
-    public Burger(boolean isCombo)
+    public TrippleQuarterPounder(boolean isCombo)
     {
         if(isCombo)
         {
