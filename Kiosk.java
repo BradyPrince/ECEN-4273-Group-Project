@@ -272,11 +272,11 @@ public class Kiosk
         System.out.println("Select the number corresponding to the item you would like to add to your order.");
         Scanner scan = new Scanner(System.in);
         //List all menu Items
-        System.out.println("1. {NAME}");
-        System.out.println("2. {NAME}");
-        System.out.println("3. {NAME}");
-        System.out.println("4. {NAME}");
-        System.out.println("5. {NAME}");
+        System.out.println("1. Cookie");
+        System.out.println("2. Apple Pie");
+        System.out.println("3. Cinnamon Bun");
+        System.out.println("4. Chocolate Shake");
+        System.out.println("5. Strawberry Shake");
         System.out.println("9. Return to Main Menu");
         //Take user input
         int userInput = scan.nextInt();
@@ -284,22 +284,27 @@ public class Kiosk
         if(userInput == 1)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			userOrder.add(new Cookie());
         }
         else if(userInput == 2)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			userOrder.add(new ApplePie());
         }
         else if(userInput == 3)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			userOrder.add(new CinnamonBun());
         }
         else if(userInput == 4)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			userOrder.add(new ChocolateShake());
         }
         else if(userInput == 5)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			userOrder.add(new StrawberryShake());
         }
         else if(userInput == 9)
         {
@@ -329,6 +334,33 @@ public class Kiosk
         return true;
     }
 }
+
+
+
+
+abstract class Item
+{
+	
+	
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Placeholder Objects for testing
 class Fries
