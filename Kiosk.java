@@ -340,8 +340,16 @@ public class Kiosk
 
 abstract class Item
 {
-	
-	
+	double price;
+	String name;
+	public String getName()
+    {
+        return name;
+    }
+    public double getPrice()
+    {
+        return price;
+    }
 } 
 
 
