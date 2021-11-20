@@ -65,7 +65,7 @@ public class sideItems {
 
 
 
-class Fries
+class Fries extends Item
 {
     double price = 0.99;
     String name = "French Fries";
@@ -92,7 +92,7 @@ class Fries
         salted = status;
     }
 }
-class OnionRings
+class OnionRings extends Item
 {
     double price = 1.50;
     String name = "Onion Rings";
@@ -119,7 +119,7 @@ class OnionRings
         salted = status;
     }
 }
-class TaterTots
+class TaterTots extends Item
 {
     double price = 1.30;
     String name = "Tater Tots";
@@ -146,7 +146,7 @@ class TaterTots
         salted = status;
     }
 }
-class CurlyFries
+class CurlyFries extends Item
 {
     double price = 0.99;
     String name = "Curly Fries";
@@ -173,7 +173,7 @@ class CurlyFries
         salted = status;
     }
 }
-class HashBrowns
+class HashBrowns extends Item
 {
     double price = 1.50;
     String name = "Curly Fries";
