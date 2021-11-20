@@ -1,5 +1,5 @@
      /*
-	 *  This is the main file that runs our program
+     *  This is the main file that runs our program
      *  Written by: William Gebhart, Brady Prince, Brett Zacharias, Steven Gaiko, Johnny Enriquez
      */
 
