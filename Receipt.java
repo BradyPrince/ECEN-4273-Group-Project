@@ -17,10 +17,10 @@ public class Receipt {
 		userOrder.add(new Item("Item9", 9));
 		userOrder.add(new Item("Item10", 10));
 
-		printReceipt();
+		printReceipt(userOrder);
 	}
 	
-	public static void printReceipt() {
+	public static void printReceipt(ArrayList<Item> userOrder) {
 		
 		System.out.println("Receipt: Customer Copy\nItem ------- Price\n");
 		for(Item item : userOrder) {
