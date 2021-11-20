@@ -63,7 +63,7 @@ public class desertItems {
 }*/
 
 
-class Cookie
+class Cookie extends Item
 {
     double price = 0.50;
     String name = "Cookie";
@@ -81,7 +81,7 @@ class Cookie
         return price;
     }
 }
-class ApplePie
+class ApplePie extends Item
 {
     double price = 2.99;
     String name = "Apple Pie";
@@ -99,7 +99,7 @@ class ApplePie
         return price;
     }
 }
-class CinnamonBun
+class CinnamonBun extends Item
 {
     double price = 1.99;
     String name = "Cinnamon Bun";
@@ -117,9 +117,9 @@ class CinnamonBun
         return price;
     }
 }
-class ChocolateShake
+class ChocolateShake extends Item
 {
-    double price = 1.99;
+    double price = 3.20;
     String name = "Chocolate Shake";
     
     public ChocolateShake()
@@ -135,9 +135,9 @@ class ChocolateShake
         return price;
     }
 }
-class StrawberryShake
+class StrawberryShake extends Item
 {
-    double price = 1.99;
+    double price = 3.20;
     String name = "Strawberry Shake";
     
     public StrawberryShake()
