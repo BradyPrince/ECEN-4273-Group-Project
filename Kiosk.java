@@ -150,7 +150,7 @@ public class Kiosk
         }
         else if(userInput == 9)
         {
-           //ADD TO ORDER: userOrder.add(new ItemName());
+          System.out.println("Returning to Main Menu.");
         }
         else
         {
@@ -168,35 +168,94 @@ public class Kiosk
         Scanner scan = new Scanner(System.in);
         //List all menu Items
         System.out.println("1. Fries");
-        System.out.println("2. {NAME}");
-        System.out.println("3. {NAME}");
-        System.out.println("4. {NAME}");
-        System.out.println("5. {NAME}");
+        System.out.println("2. Onion Rings");
+        System.out.println("3. Tater Tots");
+        System.out.println("4. Curly Fries");
+        System.out.println("5. Hash Browns");
         System.out.println("9. Return to Main Menu");
         int userInput = scan.nextInt();
         if(userInput == 1)
         {
-            userOrder.add(new Fries());
+			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new Fries(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new Fries(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 2)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new OnionRings(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new OnionRings(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 3)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new TaterTots(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new TaterTots(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 4)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new CurlyFries(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new CurlyFries(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 5)
         {
             //ADD TO ORDER: userOrder.add(new ItemName());
+			System.out.println("Enter 1 if you would like for this to be salted.\nEnter 0 for no salt.");
+            userInput = scan.nextInt();
+            if(userInput == 1)
+            {
+                userOrder.add(new HashBrowns(true));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
+            else
+            {
+                userOrder.add(new HashBrowns(false));
+                System.out.println("Item Added! Returning to Main Menu.");
+            }
         }
         else if(userInput == 9)
         {
-            //ADD TO ORDER: userOrder.add(new ItemName());
+         	System.out.println("Returning to Main Menu.");
         }
         else
         {
@@ -244,7 +303,7 @@ public class Kiosk
         }
         else if(userInput == 9)
         {
-            //ADD TO ORDER: userOrder.add(new ItemName());
+           System.out.println("Returning to Main Menu.");
         }
         else
         {
